@@ -92,6 +92,17 @@ The document uses X-Anylabeling version 3.3.8. If you use other versions, please
     ```bash
     bash install_Xanylabeling.sh
     ```
+
+    or 
+
+    ```bash
+    conda create -n Xanylabeling  python=3.9 -y
+    conda activate Xanylabeling
+    pip install onnxruntime-gpu --extra-index-url https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/onnxruntime-cuda-12/pypi/simple/ 
+    git clone -b v3.3.8 https://github.com/CVHub520/X-AnyLabeling.git
+    cd X-AnyLabeling/
+    pip install -r requirements-dev.txt
+    ```
 </details>
 
 
