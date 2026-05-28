@@ -1,9 +1,8 @@
+eval "$(conda shell.bash hook)"
 
-echo "Create & activate yolov12 environment before installation"
+conda create -n yolov12  python=3.11 -y
 
-echo "     create: conda create -n yolov12  python=3.11 -y"
-
-echo "     activate: conda activate yolov12"
+conda activate yolov12
 
 git clone https://github.com/sunsmarterjie/yolov12 
 
