@@ -1,3 +1,6 @@
+# How to Run
+# bash install_Xanylabeling.sh
+
 eval "$(conda shell.bash hook)"
 
 conda create -n Xanylabeling  python=3.9 -y
