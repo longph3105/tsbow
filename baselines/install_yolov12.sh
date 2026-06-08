@@ -1,3 +1,6 @@
+# How to Run
+# bash install_yolov12.sh
+
 eval "$(conda shell.bash hook)"
 
 conda create -n yolov12  python=3.11 -y
