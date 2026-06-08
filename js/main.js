@@ -281,6 +281,37 @@ window.addEventListener("scroll", () => {
 
 
 
+// MARK: Theme
+
+const themeToggle = document.getElementById("themeToggle");
+const themeIcon = document.getElementById("themeIcon");
+
+function setTheme(theme) {
+    document.body.classList.toggle("theme-night", theme === "night");
+    localStorage.setItem("theme", theme);
+
+    themeIcon.src = theme === "night"
+        ? "icons/theme_day.png"
+        : "icons/theme_night.png";
+
+    themeToggle.setAttribute(
+        "aria-label",
+        theme === "night" ? "Switch to day theme" : "Switch to night theme"
+    );
+}
+
+const savedTheme = localStorage.getItem("theme") || "day";
+setTheme(savedTheme);
+
+themeToggle.addEventListener("click", () => {
+    const nextTheme = document.body.classList.contains("theme-night")
+        ? "day"
+        : "night";
+
+    setTheme(nextTheme);
+});
+
+
 
 // MARK: Notice
 

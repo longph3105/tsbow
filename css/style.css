@@ -495,4 +495,51 @@ body {
 
 
 
+/* MARK: Theme */
+
+.theme-toggle {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  margin-left: 24px;
+  padding: 6px;
+}
+
+.theme-toggle img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+body.theme-night {
+  background: #07111f !important;
+  color: #eaf2ff;
+}
+
+body.theme-night .w3-white {
+  background: #0f1b2d !important;
+  color: #eaf2ff !important;
+}
+
+body.theme-night #scrollHeader,
+body.theme-night .footer {
+  background: #020817;
+}
+
+body.theme-night p,
+body.theme-night h1,
+body.theme-night h2,
+body.theme-night h3,
+body.theme-night h4,
+body.theme-night h5,
+body.theme-night .para-bi-margin,
+body.theme-night .caption-figtab {
+  color: #eaf2ff !important;
+}
+
+body.theme-night a {
+  color: #7cc7ff;
+}
+
+
 /* End of style.css */
