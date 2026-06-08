@@ -1,3 +1,6 @@
+# How to Run
+# bash install_ultralytics.sh
+
 eval "$(conda shell.bash hook)"
 
 conda create -n ultralytics  python=3.10 -y
